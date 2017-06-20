@@ -18,6 +18,11 @@ Features:
 
 ## Configuration
 
+Simple Hitmarkers can be configured from the Settings Panel in the spawnmenu,
+under `Utilities > Lixquid > Hitmarkers`.
+
+Console Commands:
+
 - `hitmarkers_enabled` (Default: `1`)
 	- Enables hitmarkers.
 - `hitmarkers_criticals` (Default: `0`)
