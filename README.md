@@ -30,6 +30,6 @@ Console Commands:
 - `hitmarkers_size` (Default: `128`)
 	- The size of the hitmarker cross.
 - `hitmarkers_sound` (Default: `1`)
-	- If enabled, hitmarkers will play a sound.
+	- The colume of the hitmarkers sound, from 0 to 1.
 - `hitmarkers_time` (Default: `1`)
 	- Sets how long hitmarkers should be visible on screen.
