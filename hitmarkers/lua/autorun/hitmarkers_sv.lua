@@ -11,6 +11,7 @@ hook.Add( "EntityTakeDamage", "hitmarkers", function( tar, info )
 	if not tar:IsPlayer() and not tar:IsNPC() then return end
 	local att = info:GetAttacker()
 	if not att:IsPlayer() then return end
+	if att == tar then return end -- stop hitting yourself
 	if att:GetInfo( "hitmarkers_enabled" ) != "1" then return end
 
 	net.Start( "hitmarker" )
