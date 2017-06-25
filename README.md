@@ -1,8 +1,9 @@
 <h1 align="center">Simple Hitmarkers</h1>
 
-Simple Hitmarkers adds a small hitmarker with accompanying sound when damage is dealt to any player or NPC.
+Simple Hitmarkers adds a small hitmarker with accompanying sound when damage is
+dealt to any player or NPC. Works in both Singleplayer and Multiplayer.
 
-Features:
+## Features
 
 - Highly Customizable; disable sound, change hitmarker size, time, and critical display.
 - Efficient; network traffic is a single net message per hit, and a single hook on client and server.
@@ -15,6 +16,11 @@ Features:
 - Via the Workshop:
 	- [Subscribe to the
 	  addon](http://steamcommunity.com/sharedfiles/filedetails/?id=950493639)
+
+To run the addon in Singleplayer, download the addon to your client.
+
+To run the addon in Multiplayer, add the addon to the list of required workshop
+mods. Client assets will be automatically downloaded to each client.
 
 ## Configuration
 
