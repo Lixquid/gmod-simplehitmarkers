@@ -4,9 +4,10 @@ Simple Hitmarkers adds a small hitmarker with accompanying sound when damage is 
 
 Features:
 
+-   Hitnumbers; Know exactly how much damage you're dealing.
 -   Highly Customizable; disable sound, change hitmarker size, time, and critical display.
--   Efficient; network traffic is a single net message per hit, and a single hook on client and server.
--   Lightweight; the entire addon included resources is just 10 KB, and two files to download.
+-   Efficient; network traffic is a single net message per hit, and just two hooks on client and server.
+-   Lightweight; the entire addon included resources is just 15 KB, and two files to download.
 
 ## Installing
 
