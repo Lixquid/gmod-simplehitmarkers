@@ -1,8 +1,6 @@
 {
-	"title": "Simple Hitmarkers",
-	"type": "weapon",
-	"tags": [ "fun" ],
-	"ignore": [
-		"*.svg"
-	]
+    "title": "Simple Hitmarkers",
+    "type": "weapon",
+    "tags": ["fun"],
+    "ignore": ["*.svg"]
 }

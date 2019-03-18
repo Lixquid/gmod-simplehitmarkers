@@ -1,27 +1,27 @@
 <svg width="512" height="512">
-	<line
-		x1="30%" y1="30%" x2="40%" y2="40%"
-		stroke="black" stroke-width="16" stroke-linecap="round" />
-	<line
-		x1="60%" y1="60%" x2="70%" y2="70%"
-		stroke="black" stroke-width="16" stroke-linecap="round" />
-	<line
-		x1="70%" y1="30%" x2="60%" y2="40%"
-		stroke="black" stroke-width="16" stroke-linecap="round" />
-	<line
-		x1="30%" y1="70%" x2="40%" y2="60%"
-		stroke="black" stroke-width="16" stroke-linecap="round" />
+    <line
+        x1="30%" y1="30%" x2="40%" y2="40%"
+        stroke="black" stroke-width="16" stroke-linecap="round" />
+    <line
+        x1="60%" y1="60%" x2="70%" y2="70%"
+        stroke="black" stroke-width="16" stroke-linecap="round" />
+    <line
+        x1="70%" y1="30%" x2="60%" y2="40%"
+        stroke="black" stroke-width="16" stroke-linecap="round" />
+    <line
+        x1="30%" y1="70%" x2="40%" y2="60%"
+        stroke="black" stroke-width="16" stroke-linecap="round" />
 
-	<line
-		x1="30%" y1="30%" x2="40%" y2="40%"
-		stroke="white" stroke-width="8" stroke-linecap="round" />
-	<line
-		x1="60%" y1="60%" x2="70%" y2="70%"
-		stroke="white" stroke-width="8" stroke-linecap="round" />
-	<line
-		x1="70%" y1="30%" x2="60%" y2="40%"
-		stroke="white" stroke-width="8" stroke-linecap="round" />
-	<line
-		x1="30%" y1="70%" x2="40%" y2="60%"
-		stroke="white" stroke-width="8" stroke-linecap="round" />
+    <line
+        x1="30%" y1="30%" x2="40%" y2="40%"
+        stroke="white" stroke-width="8" stroke-linecap="round" />
+    <line
+        x1="60%" y1="60%" x2="70%" y2="70%"
+        stroke="white" stroke-width="8" stroke-linecap="round" />
+    <line
+        x1="70%" y1="30%" x2="60%" y2="40%"
+        stroke="white" stroke-width="8" stroke-linecap="round" />
+    <line
+        x1="30%" y1="70%" x2="40%" y2="60%"
+        stroke="white" stroke-width="8" stroke-linecap="round" />
 </svg>
