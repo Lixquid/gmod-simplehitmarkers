@@ -6,7 +6,7 @@ CreateConVar( "hitmarkers_enabled", "1", {
 }, "Enables hitmarkers" )
 local cv_crit = CreateConVar( "hitmarkers_criticals", "0", {
     FCVAR_ARCHIVE
-}, "If enabled, high damage attacks will have a different colour" )
+}, "If above zero, sets the threshold at which hitmarkers will display as 'critical'" )
 local cv_size = CreateConVar( "hitmarkers_size", "128", {
     FCVAR_ARCHIVE
 }, "The size of the hitmarker cross" )
@@ -23,11 +23,12 @@ local last_time = 0
 local critical = false
 
 net.Receive( "hitmarker", function()
+    local dmg = net.ReadUInt(16)
     if cv_sound:GetBool() then
         surface.PlaySound( snd_hitmarker )
     end
     last_time = CurTime() + cv_time:GetFloat()
-    critical = net.ReadBool() and cv_crit:GetBool()
+    critical = cv_crit:GetInt() > 0 and dmg > cv_crit:GetInt()
 end )
 
 hook.Add( "HUDPaint", "hitmarkers", function()
@@ -56,9 +57,10 @@ hook.Add( "PopulateToolMenu", "hitmarkers", function()
         pnl:ControlHelp( "This must be enabled for anything " ..
             "else to function.")
         pnl:CheckBox( "Enable sound", "hitmarkers_sound" )
-        pnl:CheckBox( "Enable criticals", "hitmarkers_criticals" )
-        pnl:ControlHelp( "Attacks that deal a large amount of damage " ..
-            "will display with a different color hitmarker if enabled.")
+        pnl:NumSlider( "Critical Damage Threshold", "hitmarkers_criticals",
+            0, 200, 0 )
+        pnl:ControlHelp( "If above zero, attacks that deal above this amount" ..
+            " of damage will display a different color hitmarker." )
         pnl:NumSlider( "Hitmarker Lifetime", "hitmarkers_time",
             0.1, 5, 2 )
         pnl:NumSlider( "Hitmarker Size", "hitmarkers_size",

@@ -14,7 +14,7 @@ hook.Add( "EntityTakeDamage", "hitmarkers", function( tar, info )
     if att:GetInfo( "hitmarkers_enabled" ) ~= "1" then return end
 
     net.Start( "hitmarker" )
-        net.WriteBool( info:GetDamage() >= 90 )
+        net.WriteUInt( math.max( math.min( info:GetDamage(), 65535 ), 0 ), 16 )
     net.Send( att )
 
 end )
