@@ -15,6 +15,9 @@ hook.Add( "EntityTakeDamage", "hitmarkers", function( tar, info )
 
     net.Start( "hitmarker" )
         net.WriteUInt( math.max( math.min( info:GetDamage(), 65535 ), 0 ), 16 )
+        if att:GetInfo( "hitmarkers_numbers" ) then
+            net.WriteVector(info:GetDamagePosition() + (att:GetShootPos() - info:GetDamagePosition()):GetNormal() * 10)
+        end
     net.Send( att )
 
 end )

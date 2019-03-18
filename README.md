@@ -26,10 +26,17 @@ Console Commands:
 -   `hitmarkers_enabled` (Default: `1`)
     -   Enables hitmarkers.
 -   `hitmarkers_criticals` (Default: `0`)
-    -   If enabled, high damage attacks will have a different colour.
+    -   If above zero, sets the threshold at which hitmarkers will display as
+        'critical'
 -   `hitmarkers_size` (Default: `128`)
     -   The size of the hitmarker cross.
 -   `hitmarkers_sound` (Default: `1`)
     -   If enabled, hitmarkers will play a sound.
 -   `hitmarkers_time` (Default: `1`)
     -   Sets how long hitmarkers should be visible on screen.
+-   `hitmarkers_numbers` (Default: `0`)
+    -   If enabled, damage numbers will appear above the hit point.
+-   `hitmarkers_numbers_time` (Default: `2`)
+    -   Sets how long damage numbers will last in-game.
+-   `hitmarkers_numbers_size` (Default: `1`)
+    -   Sets how large hitnumbers will appear
